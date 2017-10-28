@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import app.chawapee.sorarittzx.sorarittzxservice.MainActivity;
 import app.chawapee.sorarittzx.sorarittzxservice.R;
@@ -19,6 +20,10 @@ import app.chawapee.sorarittzx.sorarittzxservice.R;
 public class RegisterFragment extends Fragment{
 
 
+//    Explicit
+      private  String nameString,userString,passwordString;
+
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -26,7 +31,23 @@ public class RegisterFragment extends Fragment{
        //Create toolbar
         createToolbar();
 
+        // save Controller
+        saveController();
+
     }//Main Medthod
+
+    private void saveController() {
+        ImageView imageView = getView().findViewById(R.id.imvsave);
+        imageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+
+    }
 
     private void createToolbar() {
         Toolbar toolbar = getView().findViewById(R.id.toolbarRegister);
