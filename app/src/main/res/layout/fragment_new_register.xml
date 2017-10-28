@@ -7,6 +7,7 @@
 
     <!--toolbal-->
     <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarRegister"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
@@ -18,6 +19,7 @@
     <!--content-->
     <!--Name-->
     <LinearLayout
+        android:background="#7dffffff"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
@@ -40,6 +42,7 @@
     </LinearLayout>
     <!--User-->
     <LinearLayout
+        android:background="#7dffffff"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
@@ -62,6 +65,7 @@
     </LinearLayout>
     <!--Password-->
     <LinearLayout
+        android:background="#7dffffff"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
