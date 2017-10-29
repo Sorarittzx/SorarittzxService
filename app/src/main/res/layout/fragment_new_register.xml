@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <!--toolbal-->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbarRegister"
@@ -13,15 +12,15 @@
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-      <!--Save button-->
+        <!--Save button-->
 
-      <ImageView
-          android:id="@+id/imvsave"
-          android:layout_marginRight="10dp"
-          android:layout_gravity="right"
-          android:src="@drawable/ic_save1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imvsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_save1" />
 
 
     </android.support.v7.widget.Toolbar>
@@ -29,12 +28,13 @@
     <!--content-->
     <!--Name-->
     <LinearLayout
-        android:id="@+id/edit_name"
-        android:background="#7dffffff"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#7dffffff"
         android:orientation="horizontal">
         <!--icon-->
         <ImageView
@@ -45,6 +45,7 @@
 
         <!--textfield-->
         <EditText
+            android:id="@+id/edit_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name"
@@ -53,12 +54,12 @@
     </LinearLayout>
     <!--User-->
     <LinearLayout
-        android:id="@+id/edit_user"
-        android:background="#7dffffff"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#7dffffff"
         android:orientation="horizontal">
         <!--icon-->
         <ImageView
@@ -69,6 +70,7 @@
 
         <!--textfield-->
         <EditText
+            android:id="@+id/edit_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/user"
@@ -77,12 +79,12 @@
     </LinearLayout>
     <!--Password-->
     <LinearLayout
-        android:id="@+id/edit_password"
-        android:background="#7dffffff"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#7dffffff"
         android:orientation="horizontal">
         <!--icon-->
         <ImageView
@@ -93,6 +95,7 @@
 
         <!--textfield-->
         <EditText
+            android:id="@+id/edit_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"

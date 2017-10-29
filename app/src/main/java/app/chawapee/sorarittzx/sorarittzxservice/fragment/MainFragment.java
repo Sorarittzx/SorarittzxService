@@ -21,7 +21,7 @@ public class MainFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        //Regis Controller
+        //Register Controller
         registerController();
 
 
@@ -35,7 +35,6 @@ public class MainFragment extends Fragment {
             public void onClick(View v) {
 
 //                Move to RegisterFragment
-
                 getActivity().getSupportFragmentManager().beginTransaction()
                              .replace(R.id.contentFragmentMain, new RegisterFragment())
                              .addToBackStack(null).commit();
